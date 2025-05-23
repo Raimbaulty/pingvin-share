@@ -4,6 +4,7 @@ import {
   SiGoogle,
   SiMicrosoft,
   SiOpenid,
+  SiLinux,
 } from "react-icons/si";
 import React from "react";
 import api from "../services/api.service";
@@ -19,6 +20,7 @@ const getOAuthIcon = (provider: string) => {
     github: <SiGithub />,
     discord: <SiDiscord />,
     oidc: <SiOpenid />,
+    linuxdo: <SiLinux />,
   }[provider];
 };
 

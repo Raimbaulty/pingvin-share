@@ -50,6 +50,7 @@ export default {
   "signIn.oauth.microsoft": "Microsoft",
   "signIn.oauth.discord": "Discord",
   "signIn.oauth.oidc": "OpenID",
+  "signIn.oauth.linuxdo": "LinuxDo",
 
   // END /auth/signin
 
@@ -104,6 +105,7 @@ export default {
   "account.card.oauth.microsoft": "Microsoft",
   "account.card.oauth.discord": "Discord",
   "account.card.oauth.oidc": "OpenID",
+  "account.card.oauth.linuxdo": "LinuxDo",
   "account.card.oauth.link": "Link",
   "account.card.oauth.unlink": "Unlink",
   "account.card.oauth.unlinked": "Unlinked",
@@ -582,7 +584,7 @@ export default {
     "Discovery URI of the OpenID Connect OAuth app",
   "admin.config.oauth.oidc-sign-out": "Sign out from OpenID Connect",
   "admin.config.oauth.oidc-sign-out.description":
-    "Whether the “Sign out” button will sign out from the OpenID Connect provider",
+    "Whether the \"Sign out\" button will sign out from the OpenID Connect provider",
   "admin.config.oauth.oidc-scope": "OpenID Connect scope",
   "admin.config.oauth.oidc-scope.description":
     "Scopes which should be requested from the OpenID Connect provider.",
@@ -597,12 +599,12 @@ export default {
   "admin.config.oauth.oidc-role-general-access":
     "OpenID Connect role for general access",
   "admin.config.oauth.oidc-role-general-access.description":
-    "Role required for general access. Must be present in a user’s roles for them to log in. " +
+    "Role required for general access. Must be present in a user's roles for them to log in. " +
     "Leave it blank if you don't know what this config is.",
   "admin.config.oauth.oidc-role-admin-access":
     "OpenID Connect role for admin access",
   "admin.config.oauth.oidc-role-admin-access.description":
-    "Role required for administrative access. Must be present in a user’s roles for them to access the admin panel. " +
+    "Role required for administrative access. Must be present in a user's roles for them to access the admin panel. " +
     "Leave it blank if you don't know what this config is.",
   "admin.config.oauth.oidc-client-id": "OpenID Connect Client ID",
   "admin.config.oauth.oidc-client-id.description":
@@ -713,6 +715,7 @@ export default {
   "error.param.provider_microsoft": "Microsoft",
   "error.param.provider_discord": "Discord",
   "error.param.provider_oidc": "OpenID Connect",
+  "error.param.provider_linuxdo": "LinuxDo",
 
   // Common translations
   "common.button.save": "Save",
@@ -745,4 +748,14 @@ export default {
   "common.error.exact-length": "Must be exactly {length} characters",
   "common.error.invalid-number": "Must be a number",
   "common.error.field-required": "This field is required",
+
+  "admin.config.oauth.linuxdo-enabled": "LinuxDo",
+  "admin.config.oauth.linuxdo-enabled.description":
+    "Whether to enable LinuxDo OAuth login",
+  "admin.config.oauth.linuxdo-client-id": "LinuxDo Client ID",
+  "admin.config.oauth.linuxdo-client-id.description":
+    "Client ID of the LinuxDo OAuth app",
+  "admin.config.oauth.linuxdo-client-secret": "LinuxDo Client secret",
+  "admin.config.oauth.linuxdo-client-secret.description":
+    "Client secret of the LinuxDo OAuth app",
 };

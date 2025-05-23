@@ -317,6 +317,19 @@ export const configVariables = {
       defaultValue: "",
       obscured: true,
     },
+    "linuxdo-enabled": {
+      type: "boolean",
+      defaultValue: "false",
+    },
+    "linuxdo-clientId": {
+      type: "string",
+      defaultValue: "",
+    },
+    "linuxdo-clientSecret": {
+      type: "string",
+      defaultValue: "",
+      obscured: true,
+    },
   },
   s3: {
     enabled: {

@@ -8,6 +8,7 @@ import { OAuthProvider } from "./provider/oauthProvider.interface";
 import { OidcProvider } from "./provider/oidc.provider";
 import { DiscordProvider } from "./provider/discord.provider";
 import { MicrosoftProvider } from "./provider/microsoft.provider";
+import { LinuxDoProvider } from "./provider/linuxdo.provider";
 
 @Module({
   controllers: [OAuthController],
@@ -18,6 +19,7 @@ import { MicrosoftProvider } from "./provider/microsoft.provider";
     MicrosoftProvider,
     DiscordProvider,
     OidcProvider,
+    LinuxDoProvider,
     {
       provide: "OAUTH_PROVIDERS",
       useFactory(
@@ -26,6 +28,7 @@ import { MicrosoftProvider } from "./provider/microsoft.provider";
         microsoft: MicrosoftProvider,
         discord: DiscordProvider,
         oidc: OidcProvider,
+        linuxdo: LinuxDoProvider,
       ): Record<string, OAuthProvider<unknown>> {
         return {
           github,
@@ -33,6 +36,7 @@ import { MicrosoftProvider } from "./provider/microsoft.provider";
           microsoft,
           discord,
           oidc,
+          linuxdo,
         };
       },
       inject: [
@@ -41,6 +45,7 @@ import { MicrosoftProvider } from "./provider/microsoft.provider";
         MicrosoftProvider,
         DiscordProvider,
         OidcProvider,
+        LinuxDoProvider,
       ],
     },
     {

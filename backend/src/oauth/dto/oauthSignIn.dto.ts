@@ -1,5 +1,5 @@
 export interface OAuthSignInDto {
-  provider: "github" | "google" | "microsoft" | "discord" | "oidc";
+  provider: "github" | "google" | "microsoft" | "discord" | "oidc" | "linuxdo";
   providerId: string;
   providerUsername: string;
   email: string;

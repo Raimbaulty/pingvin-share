@@ -40,6 +40,7 @@ export default {
   "signIn.oauth.microsoft": "Microsoft",
   "signIn.oauth.discord": "Discord",
   "signIn.oauth.oidc": "OpenID",
+  "signIn.oauth.linuxdo": "LinuxDo",
   // END /auth/signin
   // /auth/signup
   "signup.title": "创建账户",
@@ -81,6 +82,7 @@ export default {
   "account.card.oauth.microsoft": "Microsoft",
   "account.card.oauth.discord": "Discord",
   "account.card.oauth.oidc": "OpenID",
+  "account.card.oauth.linuxdo": "LinuxDo",
   "account.card.oauth.link": "关联",
   "account.card.oauth.unlink": "解除关联",
   "account.card.oauth.unlinked": "已解除关联",
@@ -502,6 +504,7 @@ export default {
   "error.param.provider_microsoft": "Microsoft",
   "error.param.provider_discord": "Discord",
   "error.param.provider_oidc": "OpenID Connect",
+  "error.param.provider_linuxdo": "LinuxDo",
   // Common translations
   "common.button.save": "保存",
   "common.button.create": "创建",
@@ -531,5 +534,11 @@ export default {
   "common.error.number-too-large": "必须至多为 {max}",
   "common.error.exact-length": "必须为 {length} 个字符",
   "common.error.invalid-number": "必须为数字",
-  "common.error.field-required": "必填项"
+  "common.error.field-required": "必填项",
+  "admin.config.oauth.linuxdo-enabled": "LinuxDo",
+  "admin.config.oauth.linuxdo-enabled.description": "是否启用LinuxDo OAuth登录",
+  "admin.config.oauth.linuxdo-client-id": "LinuxDo客户端ID",
+  "admin.config.oauth.linuxdo-client-id.description": "LinuxDo OAuth应用的客户端ID",
+  "admin.config.oauth.linuxdo-client-secret": "LinuxDo客户端密钥",
+  "admin.config.oauth.linuxdo-client-secret.description": "LinuxDo OAuth应用的客户端密钥"
 };
